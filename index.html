@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ikatan Alumni SMAIT Bunayya</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ░░ PRELOADER ░░ -->
+    <div id="preloader" class="preloader">
+      <div class="pre-inner">
+        <div class="pre-emblem">
+          <svg
+            viewBox="0 0 80 80"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <polygon
+              points="40,5 75,62 5,62"
+              stroke="var(--gold)"
+              stroke-width="2"
+              fill="none"
+              class="pre-tri" />
+            <circle
+              cx="40"
+              cy="38"
+              r="14"
+              stroke="var(--gold)"
+              stroke-width="1.5"
+              fill="none"
+              class="pre-circle" />
+            <text
+              x="40"
+              y="43"
+              text-anchor="middle"
+              fill="var(--gold)"
+              font-size="10"
+              font-family="Amiri">
+              ب
+            </text>
+          </svg>
+        </div>
+        <p class="pre-text">SMAIT BUNAYYA</p>
+        <div class="pre-bar"><div class="pre-progress"></div></div>
+      </div>
+    </div>
+
+    <!-- ░░ NAVBAR ░░ -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-brand">
+          <div class="brand-emblem">
+            <svg viewBox="0 0 40 40" fill="none">
+              <polygon
+                points="20,3 37,31 3,31"
+                stroke="var(--gold)"
+                stroke-width="1.5"
+                fill="none" />
+              <circle
+                cx="20"
+                cy="21"
+                r="7"
+                stroke="var(--gold)"
+                stroke-width="1"
+                fill="none" />
+              <text
+                x="20"
+                y="24"
+                text-anchor="middle"
+                fill="var(--gold)"
+                font-size="6"
+                font-family="Amiri">
+                ب
+              </text>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">IKA BUNAYYA</span>
+            <span class="brand-sub">Ikatan Alumni SMAIT Bunayya</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hero" class="nav-link">Beranda</a></li>
+          <li><a href="#tentang" class="nav-link">Tentang</a></li>
+          <li><a href="#angkatan" class="nav-link">Angkatan</a></li>
+          <li><a href="#kegiatan" class="nav-link">Kegiatan</a></li>
+          <li><a href="#galeri" class="nav-link">Galeri</a></li>
+          <li><a href="#kontak" class="nav-link">Kontak</a></li>
+        </ul>
+
+        <a href="#daftar" class="nav-cta">Daftar Anggota</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="drawer" id="drawer">
+      <button class="drawer-close" id="drawerClose">✕</button>
+      <ul>
+        <li><a href="#hero" class="drawer-link">Beranda</a></li>
+        <li><a href="#tentang" class="drawer-link">Tentang</a></li>
+        <li><a href="#angkatan" class="drawer-link">Angkatan</a></li>
+        <li><a href="#kegiatan" class="drawer-link">Kegiatan</a></li>
+        <li><a href="#galeri" class="drawer-link">Galeri</a></li>
+        <li><a href="#kontak" class="drawer-link">Kontak</a></li>
+        <li>
+          <a href="#daftar" class="drawer-link cta-link">Daftar Anggota</a>
+        </li>
+      </ul>
+    </div>
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <!-- ░░ HERO ░░ -->
+    <section class="hero" id="hero">
+      <canvas id="heroCanvas"></canvas>
+      <div class="hero-overlay"></div>
+
+      <!-- Decorative Arabic calligraphy -->
+      <div class="hero-calligraphy" aria-hidden="true">بنية</div>
+
+      <div class="hero-content">
+        <div class="hero-tag reveal-up">Ikatan Keluarga Alumni</div>
+        <h1 class="hero-title reveal-up">
+          <em>Bersama</em> Kita<br />Melangkah Lebih Jauh
+        </h1>
+        <p class="hero-desc reveal-up">
+          Menghubungkan ribuan alumni SMAIT Bunayya dalam satu keluarga besar
+          yang saling mendukung, menginspirasi, dan berkontribusi untuk
+          almamater.
+        </p>
+        <div class="hero-actions reveal-up">
+          <a href="#tentang" class="btn btn-gold">
+            <span>Jelajahi Sekarang</span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#angkatan" class="btn btn-outline">Lihat Angkatan</a>
+        </div>
+        <div class="hero-stats reveal-up">
+          <div class="hstat">
+            <span class="hstat-num" data-target="2400">0</span
+            ><span class="hstat-plus">+</span>
+            <span class="hstat-label">Alumni Terdaftar</span>
+          </div>
+          <div class="hstat-div"></div>
+          <div class="hstat">
+            <span class="hstat-num" data-target="18">0</span>
+            <span class="hstat-label">Angkatan</span>
+          </div>
+          <div class="hstat-div"></div>
+          <div class="hstat">
+            <span class="hstat-num" data-target="12">0</span>
+            <span class="hstat-label">Kota Aktif</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line-anim"></div>
+      </div>
+    </section>
+
+    <!-- ░░ MARQUEE AYAT ░░ -->
+    <div class="ayat-marquee">
+      <div class="ayat-track">
+        <span class="ayat-ar">وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَىٰ</span>
+        <span class="ayat-sep">✦</span>
+        <span class="ayat-tr"
+          >Dan tolong-menolonglah kamu dalam kebaikan dan takwa</span
+        >
+        <span class="ayat-sep">✦</span>
+        <span class="ayat-ar">وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَىٰ</span>
+        <span class="ayat-sep">✦</span>
+        <span class="ayat-tr"
+          >Dan tolong-menolonglah kamu dalam kebaikan dan takwa</span
+        >
+        <span class="ayat-sep">✦</span>
+        <span class="ayat-ar">وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَىٰ</span>
+        <span class="ayat-sep">✦</span>
+        <span class="ayat-tr"
+          >Dan tolong-menolonglah kamu dalam kebaikan dan takwa</span
+        >
+        <span class="ayat-sep">✦</span>
+      </div>
+    </div>
+
+    <!-- ░░ TENTANG ░░ -->
+    <section class="tentang" id="tentang">
+      <div class="container">
+        <div class="tentang-grid">
+          <div class="tentang-visual" data-reveal="left">
+            <div class="tv-card tv-card-main">
+              <div class="tv-icon">🕌</div>
+              <h4>Visi</h4>
+              <p>
+                Menjadi ikatan alumni yang memberdayakan generasi rabbani
+                berakhlak mulia dan berprestasi global.
+              </p>
+            </div>
+            <div class="tv-card tv-card-accent">
+              <div class="tv-icon">🌱</div>
+              <h4>Misi</h4>
+              <p>
+                Membangun silaturahmi, mengembangkan potensi, dan berkontribusi
+                nyata bagi masyarakat.
+              </p>
+            </div>
+            <div class="tv-deco"></div>
+            <div class="tv-badge">Est. 2006</div>
+          </div>
+
+          <div class="tentang-content" data-reveal="right">
+            <span class="section-tag">01 — Tentang Kami</span>
+            <h2 class="section-title">
+              Satu Almamater,<br /><em>Satu Keluarga</em>
+            </h2>
+            <p class="tentang-lead">
+              Ikatan Alumni SMAIT Bunayya (IKA Bunayya) adalah organisasi resmi
+              yang menghimpun seluruh alumni SMAIT Bunayya dalam wadah
+              persaudaraan dan pemberdayaan.
+            </p>
+            <p class="tentang-body">
+              Didirikan sebagai bentuk komitmen alumni dalam menjaga tali
+              silaturahmi dan berkontribusi aktif kepada almamater. Kami percaya
+              bahwa setiap alumni membawa nilai-nilai Bunayya ke mana pun
+              melangkah.
+            </p>
+            <div class="tentang-values">
+              <div class="value-item">
+                <div class="value-icon">🤝</div>
+                <div>
+                  <strong>Silaturahmi</strong>
+                  <span>Menjaga hubungan yang kuat antar alumni</span>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value-icon">📚</div>
+                <div>
+                  <strong>Ilmu & Amal</strong>
+                  <span>Berbagi pengetahuan dan berkontribusi nyata</span>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value-icon">🌟</div>
+                <div>
+                  <strong>Prestasi</strong>
+                  <span>Menginspirasi generasi penerus Bunayya</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ PENGURUS ░░ -->
+    <section class="pengurus" id="pengurus">
+      <div class="container">
+        <div class="section-header center" data-reveal="up">
+          <span class="section-tag">02 — Kepengurusan</span>
+          <h2 class="section-title">
+            Pengurus Pusat<br /><em>IKA Bunayya</em>
+          </h2>
+          <p class="section-desc">Periode 2023 – 2026</p>
+        </div>
+        <div class="pengurus-grid">
+          <div class="pengurus-card featured" data-reveal="up">
+            <div class="pc-photo">
+              <div class="pc-avatar pc-av-main">AR</div>
+              <div class="pc-ring"></div>
+            </div>
+            <div class="pc-jabatan">Ketua Umum</div>
+            <h3 class="pc-nama">Ahmad Rasyid, S.T.</h3>
+            <p class="pc-angkatan">Angkatan 2010</p>
+            <p class="pc-bio">
+              Alumni Teknik Sipil ITB, aktif membangun jaringan alumni di
+              berbagai kota.
+            </p>
+            <div class="pc-socials">
+              <a href="#" class="pc-soc">in</a>
+              <a href="#" class="pc-soc">ig</a>
+            </div>
+          </div>
+          <div class="pengurus-card" data-reveal="up" style="--delay: 0.1s">
+            <div class="pc-photo">
+              <div class="pc-avatar">SF</div>
+            </div>
+            <div class="pc-jabatan">Sekretaris Jenderal</div>
+            <h3 class="pc-nama">Siti Fadhilah, M.Pd.</h3>
+            <p class="pc-angkatan">Angkatan 2012</p>
+            <p class="pc-bio">
+              Pendidik aktif, berdedikasi pada pengembangan program alumni.
+            </p>
+            <div class="pc-socials">
+              <a href="#" class="pc-soc">in</a>
+              <a href="#" class="pc-soc">ig</a>
+            </div>
+          </div>
+          <div class="pengurus-card" data-reveal="up" style="--delay: 0.2s">
+            <div class="pc-photo">
+              <div class="pc-avatar">MF</div>
+            </div>
+            <div class="pc-jabatan">Bendahara Umum</div>
+            <h3 class="pc-nama">M. Faris Hakim, S.E.</h3>
+            <p class="pc-angkatan">Angkatan 2011</p>
+            <p class="pc-bio">
+              Profesional keuangan yang mengelola program beasiswa alumni.
+            </p>
+            <div class="pc-socials">
+              <a href="#" class="pc-soc">in</a>
+              <a href="#" class="pc-soc">ig</a>
+            </div>
+          </div>
+          <div class="pengurus-card" data-reveal="up" style="--delay: 0.3s">
+            <div class="pc-photo">
+              <div class="pc-avatar">NR</div>
+            </div>
+            <div class="pc-jabatan">Ketua Bidang Humas</div>
+            <h3 class="pc-nama">Nurul Rahmah, S.I.Kom.</h3>
+            <p class="pc-angkatan">Angkatan 2013</p>
+            <p class="pc-bio">
+              Komunikator handal yang menjembatani alumni dan almamater.
+            </p>
+            <div class="pc-socials">
+              <a href="#" class="pc-soc">in</a>
+              <a href="#" class="pc-soc">ig</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ ANGKATAN ░░ -->
+    <section class="angkatan" id="angkatan">
+      <div class="container">
+        <div class="section-header center" data-reveal="up">
+          <span class="section-tag">03 — Angkatan</span>
+          <h2 class="section-title">Daftar <em>Angkatan</em></h2>
+          <p class="section-desc">
+            Klik kartu angkatan untuk melihat profil dan kegiatan
+          </p>
+        </div>
+        <div class="angkatan-grid" id="angkatanGrid">
+          <!-- Cards generated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ KEGIATAN ░░ -->
+    <section class="kegiatan" id="kegiatan">
+      <div class="container">
+        <div class="section-header" data-reveal="up">
+          <span class="section-tag">04 — Kegiatan</span>
+          <h2 class="section-title">
+            Program &<br /><em>Kegiatan Terkini</em>
+          </h2>
+        </div>
+        <div class="kegiatan-tabs">
+          <button class="ktab active" data-tab="semua">Semua</button>
+          <button class="ktab" data-tab="reuni">Reuni</button>
+          <button class="ktab" data-tab="sosial">Sosial</button>
+          <button class="ktab" data-tab="beasiswa">Beasiswa</button>
+        </div>
+        <div class="kegiatan-grid" id="kegiatanGrid">
+          <!-- generated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ PRESTASI COUNTER ░░ -->
+    <section class="prestasi">
+      <div class="container">
+        <div class="prestasi-grid">
+          <div class="prest-item" data-reveal="up">
+            <div class="prest-icon">🎓</div>
+            <div class="prest-num counter" data-target="2400">0</div>
+            <div class="prest-plus">+</div>
+            <div class="prest-label">Alumni Aktif</div>
+          </div>
+          <div class="prest-item" data-reveal="up" style="--delay: 0.1s">
+            <div class="prest-icon">🏫</div>
+            <div class="prest-num counter" data-target="18">0</div>
+            <div class="prest-label">Angkatan</div>
+          </div>
+          <div class="prest-item" data-reveal="up" style="--delay: 0.2s">
+            <div class="prest-icon">🌏</div>
+            <div class="prest-num counter" data-target="12">0</div>
+            <div class="prest-label">Kota Perwakilan</div>
+          </div>
+          <div class="prest-item" data-reveal="up" style="--delay: 0.3s">
+            <div class="prest-icon">💰</div>
+            <div class="prest-num counter" data-target="320">0</div>
+            <div class="prest-plus">+</div>
+            <div class="prest-label">Penerima Beasiswa</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ GALERI ░░ -->
+    <section class="galeri" id="galeri">
+      <div class="container">
+        <div class="section-header center" data-reveal="up">
+          <span class="section-tag">05 — Galeri</span>
+          <h2 class="section-title">Momen <em>Berharga</em></h2>
+        </div>
+        <div class="galeri-grid" id="galeriGrid">
+          <!-- generated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ TESTIMONY ░░ -->
+    <section class="testimony">
+      <div class="container">
+        <div class="section-header center" data-reveal="up">
+          <span class="section-tag">06 — Cerita Alumni</span>
+          <h2 class="section-title">Suara <em>Mereka</em></h2>
+        </div>
+        <div class="testimony-slider">
+          <div class="testimony-track" id="testimonyTrack">
+            <div class="testimony-card">
+              <div class="tc-quote">"</div>
+              <p>
+                "Bunayya bukan sekadar sekolah — ia adalah tempat di mana aku
+                belajar mencintai ilmu dan mengenal diri. Ikatan yang terjalin
+                di sini tak tergantikan."
+              </p>
+              <div class="tc-author">
+                <div class="tc-av">ZN</div>
+                <div>
+                  <strong>Zainab Nur Aisyah</strong>
+                  <span>Angkatan 2014 · Dokter Umum, RSCM Jakarta</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimony-card">
+              <div class="tc-quote">"</div>
+              <p>
+                "Alumni Bunayya tersebar di berbagai penjuru negeri, namun rasa
+                kekeluargaan selalu hadir. IKA Bunayya lah yang menjaga nyala
+                itu tetap menyala."
+              </p>
+              <div class="tc-author">
+                <div class="tc-av">HM</div>
+                <div>
+                  <strong>Hafiz Maulana</strong>
+                  <span>Angkatan 2012 · Software Engineer, Gojek</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimony-card">
+              <div class="tc-quote">"</div>
+              <p>
+                "Program beasiswa IKA Bunayya membantu adik-adik kami meraih
+                mimpi. Inilah wujud nyata cinta alumni kepada almamater
+                tercinta."
+              </p>
+              <div class="tc-author">
+                <div class="tc-av">SR</div>
+                <div>
+                  <strong>Salma Rahmatika</strong>
+                  <span>Angkatan 2015 · Pengusaha Muda, Jakarta</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimony-nav">
+            <button class="tnav" id="tPrev">←</button>
+            <div class="tdots" id="tdots">
+              <span class="tdot active"></span>
+              <span class="tdot"></span>
+              <span class="tdot"></span>
+            </div>
+            <button class="tnav" id="tNext">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ DAFTAR / CTA ░░ -->
+    <section class="daftar" id="daftar">
+      <div class="daftar-bg"></div>
+      <div class="container">
+        <div class="daftar-inner" data-reveal="up">
+          <div class="daftar-emblem">
+            <svg viewBox="0 0 100 100" fill="none">
+              <polygon
+                points="50,8 92,72 8,72"
+                stroke="var(--gold)"
+                stroke-width="1.5"
+                fill="none" />
+              <circle
+                cx="50"
+                cy="53"
+                r="20"
+                stroke="var(--gold)"
+                stroke-width="1"
+                fill="none" />
+              <text
+                x="50"
+                y="58"
+                text-anchor="middle"
+                fill="var(--gold)"
+                font-size="14"
+                font-family="Amiri">
+                ب
+              </text>
+            </svg>
+          </div>
+          <h2 class="daftar-title">
+            Bergabunglah dengan<br /><em>Keluarga Besar Bunayya</em>
+          </h2>
+          <p class="daftar-desc">
+            Daftarkan diri Anda dan jadilah bagian dari ribuan alumni yang
+            saling mendukung dan menginspirasi.
+          </p>
+          <form class="daftar-form" id="daftarForm">
+            <div class="df-row">
+              <div class="df-group">
+                <input type="text" id="df-nama" placeholder=" " required />
+                <label for="df-nama">Nama Lengkap</label>
+              </div>
+              <div class="df-group">
+                <input type="email" id="df-email" placeholder=" " required />
+                <label for="df-email">Alamat Email</label>
+              </div>
+            </div>
+            <div class="df-row">
+              <div class="df-group">
+                <input type="text" id="df-tahun" placeholder=" " required />
+                <label for="df-tahun">Tahun Lulus</label>
+              </div>
+              <div class="df-group">
+                <input type="text" id="df-profesi" placeholder=" " />
+                <label for="df-profesi">Profesi / Pekerjaan</label>
+              </div>
+            </div>
+            <div class="df-group full">
+              <input type="text" id="df-kota" placeholder=" " />
+              <label for="df-kota">Kota Domisili</label>
+            </div>
+            <button type="submit" class="btn btn-gold df-submit">
+              <span class="btn-text">Daftar Sekarang</span>
+              <span class="btn-loading" style="display: none">Mengirim...</span>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+            <div class="df-success" id="dfSuccess">
+              ✓ Pendaftaran berhasil! Kami akan menghubungi Anda segera.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ KONTAK ░░ -->
+    <section class="kontak" id="kontak">
+      <div class="container">
+        <div class="section-header center" data-reveal="up">
+          <span class="section-tag">07 — Kontak</span>
+          <h2 class="section-title">Hubungi <em>Kami</em></h2>
+        </div>
+        <div class="kontak-grid">
+          <div class="kontak-card" data-reveal="up">
+            <div class="kc-icon">📍</div>
+            <h4>Alamat</h4>
+            <p>Jl. Pahlawan No. 12, Kota Pekanbaru, Riau 28281</p>
+          </div>
+          <div class="kontak-card" data-reveal="up" style="--delay: 0.1s">
+            <div class="kc-icon">📧</div>
+            <h4>Email</h4>
+            <p>ikabunayya@gmail.com<br />alumni@smaitbunayya.sch.id</p>
+          </div>
+          <div class="kontak-card" data-reveal="up" style="--delay: 0.2s">
+            <div class="kc-icon">📱</div>
+            <h4>WhatsApp</h4>
+            <p>+62 812-3456-7890<br />(Senin–Jumat, 08.00–17.00)</p>
+          </div>
+          <div class="kontak-card" data-reveal="up" style="--delay: 0.3s">
+            <div class="kc-icon">🌐</div>
+            <h4>Media Sosial</h4>
+            <div class="kc-socials">
+              <a href="#" class="kc-soc">Instagram</a>
+              <a href="#" class="kc-soc">Facebook</a>
+              <a href="#" class="kc-soc">YouTube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ FOOTER ░░ -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <div class="footer-logo">
+                <svg viewBox="0 0 40 40" fill="none" width="36" height="36">
+                  <polygon
+                    points="20,3 37,31 3,31"
+                    stroke="var(--gold)"
+                    stroke-width="1.5"
+                    fill="none" />
+                  <circle
+                    cx="20"
+                    cy="21"
+                    r="7"
+                    stroke="var(--gold)"
+                    stroke-width="1"
+                    fill="none" />
+                  <text
+                    x="20"
+                    y="24"
+                    text-anchor="middle"
+                    fill="var(--gold)"
+                    font-size="6"
+                    font-family="Amiri">
+                    ب
+                  </text>
+                </svg>
+                <div>
+                  <span class="fl-name">IKA BUNAYYA</span>
+                  <span class="fl-sub">Ikatan Alumni SMAIT Bunayya</span>
+                </div>
+              </div>
+              <p class="footer-tagline">
+                "Membangun generasi rabbani yang berakhlak mulia, berilmu
+                tinggi, dan bermanfaat bagi umat."
+              </p>
+              <div class="footer-socials">
+                <a href="#" class="fsoc">ig</a>
+                <a href="#" class="fsoc">fb</a>
+                <a href="#" class="fsoc">yt</a>
+                <a href="#" class="fsoc">wa</a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h5>Navigasi</h5>
+              <ul>
+                <li><a href="#tentang">Tentang Kami</a></li>
+                <li><a href="#pengurus">Kepengurusan</a></li>
+                <li><a href="#angkatan">Daftar Angkatan</a></li>
+                <li><a href="#kegiatan">Program Kegiatan</a></li>
+                <li><a href="#galeri">Galeri Foto</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5>Program</h5>
+              <ul>
+                <li><a href="#">Beasiswa Alumni</a></li>
+                <li><a href="#">Reuni Tahunan</a></li>
+                <li><a href="#">Bakti Sosial</a></li>
+                <li><a href="#">Mentorship</a></li>
+                <li><a href="#">Job Fair Alumni</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5>Info Sekolah</h5>
+              <ul>
+                <li><a href="#">SMAIT Bunayya</a></li>
+                <li><a href="#">Pendaftaran Siswa</a></li>
+                <li><a href="#">Berita Sekolah</a></li>
+                <li><a href="#">Kontak Sekolah</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <span>© 2024 Ikatan Alumni SMAIT Bunayya. All Rights Reserved.</span>
+          <span>Dibuat dengan ❤ oleh Alumni Bunayya</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-top" id="backTop" aria-label="Kembali ke atas">
+      ↑
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
